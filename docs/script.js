@@ -1,14 +1,22 @@
-const reveals = document.querySelectorAll('.reveal');
+const revealEls = document.querySelectorAll('.reveal');
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
 
-reveals.forEach(el => observer.observe(el));
+    entry.target.classList.add('visible');
+
+    // Stagger interno (fica com cara de designer)
+    if (entry.target.classList.contains('about-reveal')) {
+      const kids = entry.target.querySelectorAll('[data-stagger]');
+      kids.forEach((el, i) => {
+        el.style.transitionDelay = `${i * 90}ms`;
+        el.classList.add('visible');
+      });
+    }
+
+    io.unobserve(entry.target);
+  });
+}, { threshold: 0.15 });
+
+revealEls.forEach(el => io.observe(el));
