@@ -65,6 +65,7 @@ a:hover{color:var(--accent);}
   align-items:center;
   padding:8rem 6vw;
 }
+
 .hero-sub{
   font-size:clamp(1.25rem,2.6vw,1.8rem);
   max-width:640px;
@@ -108,7 +109,6 @@ blockquote{
 .about{
   background:#0d0d0f;
   color:#fff;
-  padding:0;
   overflow:clip;
 }
 .about .section-inner{
@@ -148,6 +148,7 @@ blockquote{
   grid-template-columns:1.1fr 0.9fr;
   gap:3rem;
 }
+
 .project.reverse{
   margin-left:auto;
   text-align:right;
@@ -275,6 +276,7 @@ blockquote{
   color:var(--accent);
   border-color:var(--accent);
 }
+
 .project-hero h1{max-width:900px;}
 .project-subtitle{
   margin-top:1.5rem;
@@ -328,13 +330,16 @@ blockquote{
   .hero{padding:5rem 7vw;}
   .hero-sub{font-size:1.2rem;}
   .hero-author{flex-direction:column;align-items:flex-start;}
+
   .about .section-inner{
     grid-template-columns:1fr;
     padding:6rem 7vw;
     min-height:auto;
   }
   .about aside{position:relative;top:auto;}
+
   .projects,.tech{padding:5rem 7vw;}
+
   .project{
     grid-template-columns:1fr;
     gap:1.5rem;
@@ -342,7 +347,12 @@ blockquote{
   .project.reverse{text-align:left;margin-left:0;}
   .project.reverse .project-content{order:2;}
   .project.reverse .project-media{order:1;}
-  .project-header{flex-direction:column;align-items:flex-start;}
+
+  .project-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
   .project-page{padding:4.5rem 7vw 6rem;}
   .tech-row{grid-template-columns:1fr;}
   .tech-row span{font-size:1.25rem;}
