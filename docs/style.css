@@ -113,6 +113,30 @@ blockquote{
 }
 .project.reverse{margin-left:auto;text-align:right;}
 .project-header{display:flex;align-items:baseline;gap:1.5rem;flex-wrap:wrap;}
+.project-media{
+  display:block;
+  margin-bottom:2rem;
+  border-bottom:none;
+}
+.project-media figure{margin:0;}
+.project-media img{
+  width:100%;
+  height:auto;
+  display:block;
+  filter:grayscale(100%) contrast(1.05);
+  transition:transform 400ms ease, filter 400ms ease;
+}
+.project-media figcaption{
+  margin-top:0.75rem;
+  font-size:0.85rem;
+  color:var(--muted);
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.project-media:hover img{
+  transform:scale(1.02);
+  filter:grayscale(100%) contrast(1.2);
+}
 
 .number{color:var(--accent);font-size:4rem;font-weight:bold;}
 
@@ -132,6 +156,43 @@ blockquote{
   border-right:2px solid var(--accent);
   padding-right:12px;
 }
+.project-detail{
+  margin-top:2rem;
+  border-top:1px solid var(--line);
+  padding-top:2rem;
+  opacity:0;
+  transform:translateY(16px);
+  max-height:0;
+  overflow:hidden;
+  transition:opacity 400ms ease, transform 400ms ease, max-height 600ms ease;
+}
+.project.is-open .project-detail{
+  opacity:1;
+  transform:translateY(0);
+  max-height:600px;
+}
+.detail-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:1.5rem 2.5rem;
+}
+.detail-grid strong{
+  font-family:"Playfair Display",serif;
+  font-weight:600;
+  color:var(--accent);
+}
+.detail-close{
+  margin-top:2rem;
+  background:none;
+  border:none;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:0.18em;
+  font-size:0.7rem;
+  cursor:pointer;
+  padding:0;
+}
+.detail-close:hover{color:var(--accent);}
 
 /* TECH EDITORIAL */
 .tech{padding:8rem 6vw;}
@@ -173,6 +234,7 @@ blockquote{
   .projects,.tech{padding:5rem 7vw;}
   .project.reverse{text-align:left;margin-left:0;}
   .project-header{flex-direction:column;align-items:flex-start;}
+  .detail-grid{grid-template-columns:1fr;}
   .tech-row{grid-template-columns:1fr;}
   .tech-row span{font-size:1.25rem;}
 }
