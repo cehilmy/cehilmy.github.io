@@ -10,13 +10,13 @@ const io = new IntersectionObserver((entries) => {
     if (entry.target.classList.contains('about-reveal')) {
       const kids = entry.target.querySelectorAll('[data-stagger]');
       kids.forEach((el, i) => {
-        el.style.transitionDelay = `${i * 90}ms`;
+        el.style.transitionDelay = `${i * 120}ms`;
         el.classList.add('visible');
       });
     }
 
     io.unobserve(entry.target);
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
 
 revealEls.forEach(el => io.observe(el));
