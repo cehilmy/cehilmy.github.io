@@ -1,0 +1,138 @@
+:root {
+  --accent: #FF6B35;
+  --bg: #ffffff;
+  --fg: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+h1,h2,h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 8rem 6vw;
+}
+
+.accent-line {
+  width: 200px;
+  height: 1px;
+  background: var(--accent);
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 8vw, 9rem);
+  line-height: .95;
+}
+
+.hero-sub {
+  font-size: 1.8rem;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.hero-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.hero-author span {
+  width: 60px;
+  height: 1px;
+  background: #000;
+}
+
+citação em bloco {
+  margem superior: 4rem;
+  fronteira esquerda: 3px sólido var(--acento);
+  preenchimento-esquerda: 2rem;
+ largura máxima: 600px;
+}
+
+. . . .sobre {
+  fundo: #000;
+  cor: #fff;
+  exibir: nota;
+ colunas de modelo de grau: 1fr 2fr;
+  lacuna: 4rem;
+  enchimento: 8rem 6vw;
+}
+
+. . . .sobre .liderar {
+ tamanho da fonte: 1,8rem;
+ cor: #fff;
+}
+
+. . . .sotaque {
+  cor: var(--acento);
+}
+
+. . . .projetos {
+ enchimento: 8rem6vw8remrem rem6vw;vw;enchimento6vw;
+}
+
+. . .
+ largura máxima: ppxpx;;largura máxima: ppxpx;;700plargura
+ marca superior: 5remremremrem;;remrem;;rem;rem;
+}
+
+. . .
+ marca escerta: marca escerta: marca escerta: marca escerta: 
+auto
+
+. . .
+ cor: : cor: : varcorvarvarcor: : cor: : varcorvarvar
+varcorvarvar tamanho da fonte: varcorvarvar tamanho da fonte: rem;rem;rem;rem;
+ peso da fonte: 
+audacioso
+
+. . . . 
+ fundo: fundo: fundo: fundo: 
+ enchimento: : 8remrem rem vw;8remrem 6vwvw;enchimentoremrem 6vwvw;
+#f4f4f4
+
+. . . . . 
+ estilo de lista: estilo de lista: nenhum;
+nenhum marca superior: nenhum marca superior: rem;rem;rem;rem;
+}
+
+. . .
+ tamanho sim fonte: tamanho sim fonte: 1,4remrem;1,4remrem;tamanho da fonte: 1,4remrem;1,4remrem;
+ marca inferior: 1remremremrem;;1remrem;rem;
+remrem;;
+
+. . .
+ fundo: 00
+ cor: 
+ enchimento: : 00;fundo: #6vwvw;6remrem 6vwvw;rem6rem 6vwvw;
+#fff
+
+. . .
+ cor: : 
+ decoração de texto: 
+nenhum
+
+. . .
+6eenenhumnenhum;0;;0;
+ transformar: p40difamar: 40
+ decoração de texto: transformar: p40difamar: 
+transformar. . .
+nenhum1;;
+ transformar: : transformar;transformar;0 transformar: : 
+ transição: 0,8ss facilidade;0,8ss facilidade;0vis404040p
+ 8s
