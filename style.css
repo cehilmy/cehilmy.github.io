@@ -1,0 +1,138 @@
+:root {
+  --accent: #FF6B35;
+  --bg: #ffffff;
+  --fg: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+h1,h2,h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 8rem 6vw;
+}
+
+.accent-line {
+  width: 200px;
+  height: 1px;
+  background: var(--accent);
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 8vw, 9rem);
+  line-height: .95;
+}
+
+.hero-sub {
+  font-size: 1.8rem;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.hero-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.hero-author span {
+  width: 60px;
+  height: 1px;
+  background: #000;
+}
+
+blockquote {
+  margin-top: 4rem;
+  border-left: 3px solid var(--accent);
+  preenchimento-esquerda: 2rem;
+  largura máxima: 600px;
+}
+
+. . .sobre {
+  fundo: #000;
+  cor: #fff;
+  exibir: nota;
+ colunas de modelo de grau: 1fr 2fr;
+  lacuna: 4rem;
+  enchimento: 8rem 6vw;
+}
+
+. . .sobre .liderar {
+ tamanho da fonte: 1,8rem;
+ cor: #fff;
+}
+
+. . .sotaque {
+  cor: var(--acento);
+}
+
+. . .projetos {
+  enchimento: 8rem 6vw;
+}
+
+. . .projeto {
+ largura máxima: 700px;
+ marca superior: 5rem;
+}
+
+. . . . .projeto.verso {
+ marca escerta: auto;
+}
+
+. . . . .numero {
+  cor: var(--acento);
+ tamanho da fonte: 4rem;
+ peso da fonte: audacioso;
+}
+
+. . . . .tecnologia {
+  fundo: #f4f4f4;
+  enchimento: 8rem 6vw;
+}
+
+. . . . tecnologia ul {
+ estilo de lista: nenhum;
+ marca superior: 3rem;
+}
+
+. . . . .tecnologia li {
+ tamanho da fonte: 1,4rem;
+ marca inferior: 1rem;
+}
+
+. . . . .rodapé {
+  fundo: #000;
+  cor: #fff;
+  enchimento: 6rem 6vw;
+}
+
+. . . . .rodapé a {
+  cor: var(--acento);
+ decoração de texto: nenhum;
+}
+
+. . . . .revelar {
+  opacidade: 0;
+  transformar: difamar(40px);
+}
+. . . . .revelar.visível {
+  opacidade: 1;
+  transformar: difamar(0);
+  transição: 0,8s facilidade;
+}
