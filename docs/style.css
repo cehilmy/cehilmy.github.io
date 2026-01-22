@@ -80,12 +80,21 @@ blockquote{
 .about{
   background:#0d0d0f;
   color:#fff;
-  padding:8rem 6vw;
+  padding:0;
+  overflow:clip;
 }
 .about .section-inner{
   display:grid;
   grid-template-columns:1fr 2fr;
   gap:4rem;
+  padding:8rem 6vw;
+  align-items:start;
+  min-height:calc(100vh - 16rem);
+}
+.about aside{
+  position:sticky;
+  top:3rem;
+  align-self:start;
 }
 
 .about .lead{font-size:clamp(1.3rem,2.2vw,1.8rem);}
@@ -159,7 +168,8 @@ blockquote{
   .hero{padding:5rem 7vw;}
   .hero-sub{font-size:1.2rem;}
   .hero-author{flex-direction:column;align-items:flex-start;}
-  .about .section-inner{grid-template-columns:1fr;}
+  .about .section-inner{grid-template-columns:1fr;padding:6rem 7vw;min-height:auto;}
+  .about aside{position:relative;top:auto;}
   .projects,.tech{padding:5rem 7vw;}
   .project.reverse{text-align:left;margin-left:0;}
   .project-header{flex-direction:column;align-items:flex-start;}
