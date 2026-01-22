@@ -1,14 +1,14 @@
-const revela = documento.consultaSelectorAll('.revelar');
+const reveals = document.querySelectorAll('.reveal');
 
-const observador = novo Observador de Intersecção(
-  entradas => {
-    entradas.parágrafo cada hum(entrada => {
-      se (entrada.está se cruzando) {
-        entrada.alto.lista de aulas.adicionário('visível');
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
       }
     });
   },
-  { limite: 0,2 }
+  { threshold: 0.2 }
 );
 
-revelação.parágrafo cada hum(r => observador.observar(r));
+reveals.forEach(el => observer.observe(el));
