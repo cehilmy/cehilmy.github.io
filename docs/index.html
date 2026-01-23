@@ -14,10 +14,10 @@
 
 <body class="paper">
 
-<header class="hero reveal">
+<header class="hero reveal" data-reveal="fade" data-duration="1200">
   <div class="section-inner">
     <p class="eyebrow">Manifesto editorial</p>
-    <div class="accent-line"></div>
+    <div class="accent-line reveal-line" data-delay="300" data-duration="800"></div>
 
     <h1>Dados não<br>falam por si.</h1>
 
@@ -47,28 +47,28 @@
       <h2>Uma ciência<br>de dados que<br>não se isenta.</h2>
     </aside>
 
-    <article class="reveal about-reveal">
-      <p class="lead" data-stagger>
+    <article class="reveal" data-offset="40" data-duration="800">
+      <p class="lead">
         Escolhi ciência de dados porque é onde matemática,
         filosofia e ação prática colidem.
       </p>
 
-      <p data-stagger>
+      <p>
         Não acredito em neutralidade algorítmica.
         Todo modelo carrega escolhas políticas.
       </p>
 
-      <p data-stagger>
+      <p>
         Minha abordagem é simples:
         <span class="accent">entender antes de otimizar</span>.
       </p>
 
-      <p data-stagger>
+      <p>
         Minha formação real veio dos projetos que falharam
         e dos modelos que precisei abandonar.
       </p>
 
-      <em data-stagger>
+      <em>
         Procuro ambientes onde pensamento crítico
         seja requisito, não obstáculo.
       </em>
@@ -78,11 +78,13 @@
 
 <section class="projects">
   <div class="section-inner">
-    <p class="eyebrow">Trabalhos selecionados</p>
-    <h2>Projetos como ensaios,<br>não entregas.</h2>
+    <div class="projects-header reveal" data-reveal="fade" data-duration="800">
+      <p class="eyebrow">Trabalhos selecionados</p>
+      <h2>Projetos como ensaios,<br>não entregas.</h2>
+    </div>
 
     <!-- PROJETO 01 -->
-    <article class="project reveal">
+    <article class="project reveal" data-reveal="fade" data-duration="800">
       <a class="project-media" href="./projects/project-01/">
         <figure>
           <span class="media-frame">
@@ -111,7 +113,7 @@
     </article>
 
     <!-- PROJETO 02 -->
-    <article class="project reverse reveal">
+    <article class="project reverse reveal" data-reveal="fade" data-duration="800">
       <a class="project-media" href="./projects/project-02/">
         <figure>
           <span class="media-frame">
@@ -140,7 +142,7 @@
     </article>
 
     <!-- PROJETO 03 -->
-    <article class="project reveal">
+    <article class="project reveal" data-reveal="fade" data-duration="800">
       <a class="project-media" href="./projects/project-03/">
         <figure>
           <span class="media-frame">
@@ -172,27 +174,29 @@
 
 <section class="tech">
   <div class="section-inner">
-    <p class="eyebrow">Ferramentas como linguagem</p>
-    <h2>Ensaios tipográficos<br>sobre método.</h2>
+    <div class="tech-header reveal" data-offset="40" data-duration="800">
+      <p class="eyebrow">Ferramentas como linguagem</p>
+      <h2>Ensaios tipográficos<br>sobre método.</h2>
+    </div>
 
     <div class="tech-list">
-      <div class="tech-row reveal">
+      <div class="tech-row reveal" data-reveal="left" data-duration="600">
         <span>Python</span>
         <p>A linguagem que me ensinou que elegância e poder não são excludentes.</p>
       </div>
-      <div class="tech-row reveal">
+      <div class="tech-row reveal" data-reveal="left" data-duration="600" data-delay="100">
         <span>SQL</span>
         <p>Porque toda história começa com saber fazer as perguntas certas.</p>
       </div>
-      <div class="tech-row reveal">
+      <div class="tech-row reveal" data-reveal="left" data-duration="600" data-delay="200">
         <span>Machine Learning</span>
         <p>Não é sobre prever o futuro. É sobre entender padrões ignorados.</p>
       </div>
-      <div class="tech-row reveal">
+      <div class="tech-row reveal" data-reveal="left" data-duration="600" data-delay="300">
         <span>NLP</span>
         <p>Ensinar máquinas a compreender é um ato político.</p>
       </div>
-      <div class="tech-row reveal">
+      <div class="tech-row reveal" data-reveal="left" data-duration="600" data-delay="400">
         <span>Deep Learning</span>
         <p>Camadas de complexidade revelando simplicidade.</p>
       </div>
@@ -200,7 +204,7 @@
   </div>
 </section>
 
-<footer class="footer reveal">
+<footer class="footer">
   <div class="section-inner">
     <p class="eyebrow">Contato</p>
     <h3>
@@ -216,4 +220,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
