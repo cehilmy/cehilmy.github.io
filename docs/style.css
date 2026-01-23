@@ -325,6 +325,42 @@ blockquote{
   transition:900ms ease;
 }
 
+/* ABOUT ME */
+.about-me{
+  padding:8rem 6vw;
+  background-color:var(--paper);
+}
+.about-me-grid{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  gap:4rem;
+  align-items:center;
+}
+.about-me-photo img{
+  width:100%;
+  display:block;
+  border:1px solid var(--line);
+}
+.about-me-content .eyebrow{
+  margin-bottom:1rem;
+}
+.about-me-content h2{
+  font-size:clamp(2.4rem,4vw,4.5rem);
+  margin-bottom:1.5rem;
+}
+.about-me-text{
+  color:var(--ink-soft);
+  margin-bottom:2rem;
+}
+.about-me-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1.5rem;
+}
+.about-me-links a{
+  border-bottom:1px solid var(--accent);
+}
+
 /* MOBILE */
 @media(max-width:768px){
   .hero{padding:5rem 7vw;}
@@ -339,6 +375,13 @@ blockquote{
   .about aside{position:relative;top:auto;}
 
   .projects,.tech{padding:5rem 7vw;}
+
+  .about-me{
+    padding:6rem 7vw;
+  }
+  .about-me-grid{
+    grid-template-columns:1fr;
+  }
 
   .project{
     grid-template-columns:1fr;
